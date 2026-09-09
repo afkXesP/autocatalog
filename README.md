@@ -20,7 +20,7 @@ project/
 │   ├── telegram_report.py
 │   └── clean_catalog.py
 ├── .env
-├── .env.example
+├── .env_example
 ├── requirements.txt
 └── README.md
 ```
@@ -47,7 +47,7 @@ pip install -r requirements.txt
 
 ## Переменные окружения
 
-Создать `.env` в корне проекта (пример - в `.env.example`):
+Создать `.env` в корне проекта (пример - в `.env_example`):
 
 ```env
 # Ozon Seller API
