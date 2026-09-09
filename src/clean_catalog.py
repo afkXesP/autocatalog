@@ -52,6 +52,7 @@ def parse_price(value: str) -> float | None:
         return None
 
     normalized = value.strip().lower()
+    normalized = re.sub(r"(?<=\d)[\s\xa0](?=\d)", "", normalized)
     normalized = normalized.replace("\xa0", " ")
 
     numbers = re.findall(r"\d+(?:[.,]\d+)?", normalized)
